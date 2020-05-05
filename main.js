@@ -19,7 +19,7 @@ function commentHeartCallback(event) {
        currHeart.innerText = heartStates[heart.innerText];
     })
     .catch(function(error) {
-      document.body.innerHTML = error.message;
+      alert("Something went wrong with the like!");
     });
 }
 
