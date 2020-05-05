@@ -29,7 +29,7 @@ function commentHeartCallback(event) {
     });
 }
 
-for (let state of heartStates) {
+for (let state of commentHearts) {
   state.addEventListener("click", commentHeartCallback);
 }
 
