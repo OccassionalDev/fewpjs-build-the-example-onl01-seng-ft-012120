@@ -4,8 +4,24 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+let heartStates = {
+  EMPTY_HEART: FULL_HEART,
+  FULL_HEART: EMPTY_HEART
+};
 
+let commentHearts = document.querySelectorAll(".like");
 
+function commentHeartCallback(event) {
+  let currHeart = event.target;
+  
+  mimicServerCall("aUrl")
+    .then(function(serverMessage){
+       currHeart.innerText = heartStates[heart.innerText];
+    })
+    .catch(function(error) {
+      document.body.innerHTML = error.message;
+    });
+}
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
