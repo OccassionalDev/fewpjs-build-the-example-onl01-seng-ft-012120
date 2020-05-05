@@ -23,6 +23,10 @@ function commentHeartCallback(event) {
     });
 }
 
+for (let state of heartStates) {
+  state.addEventListener("click", commentHeartCallback);
+}
+
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
 //------------------------------------------------------------------------------
