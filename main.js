@@ -9,6 +9,11 @@ let heartStates = {
   FULL_HEART: EMPTY_HEART
 };
 
+let colorStates = {
+  "red": "",
+  "": "red"
+};
+
 let commentHearts = document.querySelectorAll(".like");
 
 function commentHeartCallback(event) {
