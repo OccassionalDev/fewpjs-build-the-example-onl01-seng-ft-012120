@@ -22,7 +22,7 @@ function commentHeartCallback(event) {
   mimicServerCall("aUrl")
     .then(function(serverMessage){
        currHeart.innerText = heartStates[currHeart.innerText];
-       //currHeart.style.color = colorStates[currHeart];
+       currHeart.style.color = colorStates[currHeart];
     })
     .catch(function(error) {
       alert("Something went wrong with the like!");
