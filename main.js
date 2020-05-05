@@ -16,7 +16,8 @@ function commentHeartCallback(event) {
   
   mimicServerCall("aUrl")
     .then(function(serverMessage){
-       currHeart.innerText = heartStates[heart.innerText];
+       currHeart.innerText = heartStates[currHeart.innerText];
+       //currHeart.style.color = colorStates[currHeart];
     })
     .catch(function(error) {
       alert("Something went wrong with the like!");
