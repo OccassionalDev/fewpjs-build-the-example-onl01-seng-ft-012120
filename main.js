@@ -5,8 +5,8 @@ const FULL_HEART = '♥'
 // Your JavaScript code goes here!
 
 let heartStates = {
-  EMPTY_HEART: FULL_HEART,
-  FULL_HEART: EMPTY_HEART
+  "♡": "♥",
+  "♥": "♡"
 };
 
 let colorStates = {
